@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>rookie-take-out</artifactId>
+  <groupId>com.rookie</groupId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <parent>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <groupId>org.springframework.boot</groupId>
+    <version>2.7.3</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <modules>
+    <module>rookie-common</module>
+    <module>rookie-pojo</module>
+    <module>rookie-server</module>
+  </modules>
+
+  <properties>
+    <aliyun.sdk.oss>3.10.2</aliyun.sdk.oss>
+    <aspectj>1.9.4</aspectj>
+    <commons.lang>2.6</commons.lang>
+    <druid>1.2.1</druid>
+    <fastjson>1.2.76</fastjson>
+    <jaxb-api>2.3.1</jaxb-api>
+    <jjwt>0.9.1</jjwt>
+    <knife4j>3.0.2</knife4j>
+    <lombok>1.18.20</lombok>
+    <mybatis.spring>2.2.0</mybatis.spring>
+    <pagehelper>1.3.0</pagehelper>
+    <poi>3.16</poi>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <artifactId>mybatis-spring-boot-starter</artifactId>
+        <groupId>org.mybatis.spring.boot</groupId>
+        <version>${mybatis.spring}</version>
+      </dependency>
+
+      <dependency>
+        <artifactId>lombok</artifactId>
+        <groupId>org.projectlombok</groupId>
+        <version>${lombok}</version>
+      </dependency>
+
+      <dependency>
+        <artifactId>fastjson</artifactId>
+        <groupId>com.alibaba</groupId>
+        <version>${fastjson}</version>
+      </dependency>
+
+      <dependency>
+        <artifactId>commons-lang</artifactId>
+        <groupId>commons-lang</groupId>
+        <version>${commons.lang}</version>
+      </dependency>
+
+      <dependency>
+        <artifactId>druid-spring-boot-starter</artifactId>
+        <groupId>com.alibaba</groupId>
+        <version>${druid}</version>
+      </dependency>
+
+      <dependency>
+        <artifactId>pagehelper-spring-boot-starter</artifactId>
+        <groupId>com.github.pagehelper</groupId>
+        <version>${pagehelper}</version>
+      </dependency>
+
+      <dependency>
+        <artifactId>knife4j-spring-boot-starter</artifactId>
+        <groupId>com.github.xiaoymin</groupId>
+        <version>${knife4j}</version>
+      </dependency>
+
+      <dependency>
+        <artifactId>aspectjrt</artifactId>
+        <groupId>org.aspectj</groupId>
+        <version>${aspectj}</version>
+      </dependency>
+
+      <dependency>
+        <artifactId>aspectjweaver</artifactId>
+        <groupId>org.aspectj</groupId>
+        <version>${aspectj}</version>
+      </dependency>
+
+      <dependency>
+        <artifactId>jjwt</artifactId>
+        <groupId>io.jsonwebtoken</groupId>
+        <version>${jjwt}</version>
+      </dependency>
+
+      <dependency>
+        <artifactId>aliyun-sdk-oss</artifactId>
+        <groupId>com.aliyun.oss</groupId>
+        <version>${aliyun.sdk.oss}</version>
+      </dependency>
+
+      <dependency>
+        <artifactId>jaxb-api</artifactId>
+        <groupId>javax.xml.bind</groupId>
+        <version>${jaxb-api}</version>
+      </dependency>
+
+      <!-- poi -->
+      <dependency>
+        <artifactId>poi</artifactId>
+        <groupId>org.apache.poi</groupId>
+        <version>${poi}</version>
+      </dependency>
+      <dependency>
+        <artifactId>poi-ooxml</artifactId>
+        <groupId>org.apache.poi</groupId>
+        <version>${poi}</version>
+      </dependency>
+      <!--微信支付-->
+      <dependency>
+        <artifactId>wechatpay-apache-httpclient</artifactId>
+        <groupId>com.github.wechatpay-apiv3</groupId>
+        <version>0.4.8</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>
